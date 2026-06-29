@@ -111,7 +111,6 @@ namespace Platform.Infrastructure.Data
             return totalDeleted;
         }
 
-        public IQueryable<T> GetQueryable() => _context.Set<T>().AsQueryable();
         public async Task<int> TotalAsync(Expression<Func<T, bool>> predicate) => await _context.Set<T>().CountAsync(predicate);
 
         private static Expression<Func<T, bool>> BuildContainsExpression(Expression<Func<T, Guid>> keySelector, List<Guid> ids)
