@@ -26,7 +26,7 @@ public sealed class BlobService : IBlobService
 
         await container.CreateIfNotExistsAsync(PublicAccessType.Blob);
 
-        var blob = container.GetBlobClient(Guid.NewGuid() + Path.GetExtension(fileName));
+        var blob = container.GetBlobClient(Guid.CreateVersion7() + Path.GetExtension(fileName));
 
         if (fileStream.CanSeek)
             fileStream.Position = 0;
@@ -46,7 +46,7 @@ public sealed class BlobService : IBlobService
         CancellationToken cancellationToken = default)
     {
         var containerName = "products-private";
-        var blobName = $"{Guid.NewGuid()}{Path.GetExtension(fileName)}";
+        var blobName = $"{Guid.CreateVersion7()}{Path.GetExtension(fileName)}";
 
         var containerClient = _blobServiceClient.GetBlobContainerClient(containerName);
 
