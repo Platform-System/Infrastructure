@@ -2,20 +2,20 @@ name: CI
 
 permissions:
   contents: read
-  packages: write
-
-on:
-  push:
-    branches: [ main ]
-
-jobs:
-  build:
-    uses: Platform-System/Platform.CI-CD/.github/workflows/build-dotnet.yml@main
-    secrets: inherit
-    with:
-      project_path: 'Platform.Infrastructure.csproj'
-      test_path: 'Platform.Infrastructure.Tests/Platform.Infrastructure.Tests.csproj'
-      dependencies: 'Platform-System/Platform.Application,Platform-System/Platform.BuildingBlocks,Platform-System/Platform.Domain'
-
-
+  packages: write
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    uses: Platform-System/CI-CD/.github/workflows/build-dotnet.yml@main
+    secrets: inherit
+    with:
+      project_path: 'Infrastructure.csproj'
+      test_path: 'Infrastructure.Tests/Infrastructure.Tests.csproj'
+      dependencies: 'Platform-System/Application,Platform-System/BuildingBlocks,Platform-System/Domain'
+
+
 
