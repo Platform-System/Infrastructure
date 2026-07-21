@@ -2,14 +2,14 @@ using Azure.Storage.Blobs;
 using StackExchange.Redis;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
-using Platform.Application.Abstractions.Caching;
-using Platform.Application.Abstractions.Data;
-using Platform.Application.Abstractions.Storage;
-using Platform.Infrastructure.Caching;
-using Platform.Infrastructure.Data;
-using Platform.Infrastructure.Storage;
+using Application.Abstractions.Caching;
+using Application.Abstractions.Data;
+using Application.Abstractions.Storage;
+using Infrastructure.Caching;
+using Infrastructure.Data;
+using Infrastructure.Storage;
 
-namespace Platform.Infrastructure.DependencyInjection;
+namespace Infrastructure.DependencyInjection;
 
 public static class DependencyInjection
 {

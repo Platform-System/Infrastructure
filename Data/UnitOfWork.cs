@@ -1,8 +1,8 @@
-using Platform.Application.Abstractions.Data;
+using Application.Abstractions.Data;
 using Microsoft.EntityFrameworkCore.Storage;
-using Platform.Domain.Common;
+using Domain.Common;
 
-namespace Platform.Infrastructure.Data
+namespace Infrastructure.Data
 {
     public class UnitOfWork : IUnitOfWork
     {

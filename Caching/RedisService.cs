@@ -1,8 +1,8 @@
-using Platform.Application.Abstractions.Caching;
+using Application.Abstractions.Caching;
 using StackExchange.Redis;
 using System.Text.Json;
 
-namespace Platform.Infrastructure.Caching
+namespace Infrastructure.Caching
 {
     public class RedisService : IRedisService
     {

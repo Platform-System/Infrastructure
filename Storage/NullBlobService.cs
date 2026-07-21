@@ -1,6 +1,6 @@
-using Platform.Application.Abstractions.Storage;
+using Application.Abstractions.Storage;
 
-namespace Platform.Infrastructure.Storage;
+namespace Infrastructure.Storage;
 
 public sealed class NullBlobService : IBlobService
 {

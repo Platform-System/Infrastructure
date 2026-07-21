@@ -1,10 +1,10 @@
-using Platform.Application.Abstractions.Data;
+using Application.Abstractions.Data;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
-using Platform.BuildingBlocks.Responses;
-using Platform.Domain.Common;
+using BuildingBlocks.Responses;
+using Domain.Common;
 
-namespace Platform.Infrastructure.Data
+namespace Infrastructure.Data
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : Entity
     {

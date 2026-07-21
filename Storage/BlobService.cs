@@ -1,10 +1,10 @@
 using Azure.Storage.Blobs;
 using Azure.Storage.Blobs.Models;
 using Azure.Storage.Sas;
-using Platform.Application.Abstractions.Storage;
-using Platform.BuildingBlocks.DateTimes;
+using Application.Abstractions.Storage;
+using BuildingBlocks.DateTimes;
 
-namespace Platform.Infrastructure.Storage;
+namespace Infrastructure.Storage;
 
 public sealed class BlobService : IBlobService
 {

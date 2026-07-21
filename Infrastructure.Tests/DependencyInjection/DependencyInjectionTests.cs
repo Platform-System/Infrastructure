@@ -1,13 +1,13 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Platform.Application.Abstractions.Caching;
-using Platform.Application.Abstractions.Storage;
-using Platform.Infrastructure.Caching;
-using Platform.Infrastructure.DependencyInjection;
-using Platform.Infrastructure.Storage;
+using Application.Abstractions.Caching;
+using Application.Abstractions.Storage;
+using Infrastructure.Caching;
+using Infrastructure.DependencyInjection;
+using Infrastructure.Storage;
 using Xunit;
 
-namespace Platform.Infrastructure.Tests.DependencyInjection;
+namespace Infrastructure.Tests.DependencyInjection;
 
 public sealed class DependencyInjectionTests
 {

@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
-using Platform.BuildingBlocks.Abstractions;
-using Platform.BuildingBlocks.DateTimes;
-using Platform.Domain.Common;
+using BuildingBlocks.Abstractions;
+using BuildingBlocks.DateTimes;
+using Domain.Common;
 
-namespace Platform.Infrastructure.Data
+namespace Infrastructure.Data
 {
     public abstract class BaseDbContext : DbContext
     {

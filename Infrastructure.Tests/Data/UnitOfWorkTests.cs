@@ -1,10 +1,10 @@
 using Microsoft.EntityFrameworkCore;
-using Platform.BuildingBlocks.Abstractions;
-using Platform.Domain.Common;
-using Platform.Infrastructure.Data;
+using BuildingBlocks.Abstractions;
+using Domain.Common;
+using Infrastructure.Data;
 using Xunit;
 
-namespace Platform.Infrastructure.Tests.Data;
+namespace Infrastructure.Tests.Data;
 
 public sealed class UnitOfWorkTests
 {

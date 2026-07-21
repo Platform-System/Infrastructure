@@ -1,6 +1,6 @@
-using Platform.Application.Abstractions.Caching;
+using Application.Abstractions.Caching;
 
-namespace Platform.Infrastructure.Caching;
+namespace Infrastructure.Caching;
 
 public sealed class NullRedisService : IRedisService
 {
